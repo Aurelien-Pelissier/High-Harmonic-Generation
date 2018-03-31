@@ -27,7 +27,11 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 
 
 
-## Code structure
+## Running the code
+
+
+
+#### Code structure
 
 	main
 	------detectdipole					%check if dipole file already exist
@@ -60,8 +64,6 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 
 
 
-
-## Running the code
 
 
 
