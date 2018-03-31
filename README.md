@@ -34,14 +34,14 @@ In the folder, all the MATLAB files starting with "main" are different simulatio
 
 ```matlab
 %General parameters:
-	q =21;                  %Harmonic order (1:51)
-	t = 0;                  %Time [s] (gaussian pulse centered in t = 0)
+	q =21;                  	%Harmonic order (1:51)
+	t = 0;                  	%Time [s] (gaussian pulse centered in t = 0)
 	alpha = 2e-14;			%Phase coefficient (taken at 2e-14 cm2/W for the whole study)
-	Te = 3;	            	%Freed electron temperature [eV] (taken as 3eV for the whole study)
+	Te = 3;	            		%Freed electron temperature [eV] (taken as 3eV for the whole study)
 
 
 %Laser parameters:
-	I0 = 6e13;              %Peak intensity [W/cm2]
+	I0 = 6e13;              	%Peak intensity [W/cm2]
 	tp = 130e-15;			%Pulse length (FWHM)
 	lambda1 = 1050e-9;		%Fundamental wavelength [m]
 	R0 = 19.6e-6;			%Beam radius [m]
@@ -50,21 +50,26 @@ In the folder, all the MATLAB files starting with "main" are different simulatio
 
 %Gas parameters:
 	V = 250;          		%Gas velocity [m/s]
-	P = 500;                %Peak pressure [mbar]
+	P = 500;                	%Peak pressure [mbar]
 	lp = 150e-6; 			%Interaction length (FWHM if gaussian)/ nozzle diameter [m]
 	profile = 'gauss'; 	  	%Density profile ('squar' or 'gauss')
-	znozzle = 0;	       	%Nozzle position [m]
+	znozzle = 0;	       		%Nozzle position [m]
 	gas = 'Kr';     		%Gas ('Ar', 'Kr', 'Xe')
-	xHe = 0;                %Helium fraction (0:1)
+	xHe = 0;                	%Helium fraction (0:1)
 
 
 %Graph parameters:
 	zmax = 1e-3; 		   	%Boundaries calculation on optical axis
 	rmax = 50e-6;		   	%Boundaries calculations on nozzle axis
 	nres = 200; 	  	   	%Resolution
+	
+		%The calculation is made with:
+		%z	= [-zmax : (2*zmax)/nres : zmax];
+		%r	= [-rmax : (2*rmax)/nres : rmax];
 ```
 
-Now that we have set all the important input parameters for the simulation, we compute the harmonic output with:
+The above parameters are realistic values that we would use when generating HHG experimentally.
+Now that we have set all the important input parameters for the simulation, we can compute the harmonic output with:
 
 ```matlab
 
@@ -83,7 +88,9 @@ Now that we have set all the important input parameters for the simulation, we c
 	%display the result
 	display(Iqz)
 ```
-Note that this program return one number, which is the harmonic amplitude output in arbitrary unit. It is interresting to modify the input parameters to see how the output is affected
+Note that this program return one number, which is the harmonic amplitude output in arbitrary unit. While this number itself has no significant meaning, it is interresting to modify the input parameters to see how the output is modified.
+
+To have access to other datas like electron wavefunction, wavevector mismatch, ionization fraction... You can take a look into the function .m files. If you are interrested in negligible absorption or perfect phasematching calculations, you can call amplitude_PMfree.m, amplitude_ABSfree.m and amplitude_ABSPM_free.m instead of amplitude.m. Calculation with non zero helium fraction require the call of amplitude_He.m instead of amplitude.m
 
 
 #### Code structure
