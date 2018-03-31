@@ -24,7 +24,13 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 - Gas (Krypton, Argon, Xenon)
 
 
-<p><span class="gauche">Texte aligné à gauche</span><span class="droite">Texte aligné à droite</span></p>
+<div style="text-align: right"> your-text-here </div>
+
+| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
 
 
 
