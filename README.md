@@ -107,6 +107,8 @@ Note that this code will return one number, which is the harmonic amplitude outp
 
 Since most of the parameters that are involved in the HHG process can be xhanged experementally, this is hard to
 
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/results.png" width=600>
+
 
 
 
