@@ -7,11 +7,11 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 
 ## Involved parameters
 
-#### Laser parameters
+#### Laser parameters 					#### Laser parameters
 
 - Peak intensity
 - Pulse length (FWHM)
-- Wavelength
+- Wavelength                 				- Nozzle diameter
 - Beam Radius
 - Frequency
 - Harmonic order
@@ -25,12 +25,6 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 
 
 <div style="text-align: right"> your-text-here </div>
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
 
 
 
