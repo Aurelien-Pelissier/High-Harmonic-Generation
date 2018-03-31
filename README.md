@@ -20,14 +20,12 @@ In the source code folder, all the MATLAB files starting with "main" are simulat
 	alpha = 2e-14;			%Phase coefficient [cm2/W] (taken at 2e-14 cm2/W for the whole study)
 	Te = 3;	            		%Freed electron temperature [eV] (taken as 3eV for the whole study)
 
-
 %Laser parameters:
 	I0 = 6e13;              	%Peak intensity [W/cm2]
 	tp = 130e-15;			%Pulse length (FWHM)
 	lambda1 = 1050e-9;		%Fundamental wavelength [m]
 	R0 = 19.6e-6;			%Beam radius [m]
 	f = 60e6; 	           	%Laser frequency [Hz]
-
 
 %Gas parameters:
 	V = 250;          		%Gas velocity [m/s]
@@ -37,7 +35,6 @@ In the source code folder, all the MATLAB files starting with "main" are simulat
 	znozzle = 0;	       		%Nozzle position [m]
 	gas = 'Kr';     		%Gas ('Ar', 'Kr', 'Xe')
 	xHe = 0;                	%Helium fraction (between 0 and 1)
-
 
 %Graph parameters:
 	zmax = 1e-3; 		   	%Boundaries calculation on optical axis [m]
@@ -105,7 +102,7 @@ Note that this code will return one number, which is the harmonic amplitude outp
 
 ## Main Results
 
-Since there is more than 10 parameters involved in the HHG process that can be modified experimentally, and because the involved physical phenomenon are highly nonlinear, it is not possible to give an overview of all dependencies at the same time. The 2 following graphs are an example of what we can obtain by running the simulation:
+Since there is more than 10 parameters involved in the HHG process that can be modified experimentally, and because the involved physical phenomenon are highly nonlinear, it is not possible to give an overview of all dependencies at the same time. This section only showcases some of the results obtained with our implementation. For more details regarding the theory, implementation choices and the obtained results please refer to the pdf report. The 2 following graphs are an example of what we can obtain by running the simulation:
 
 <img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/results.png" width=900>
 
