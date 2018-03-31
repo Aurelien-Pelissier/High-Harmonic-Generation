@@ -27,8 +27,8 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 <table>
     <thead>
         <tr>
-            <th>header 1</th>
-            <th align="center">header 2</th>
+            <th align="center">#### Gas parameters</th>
+            <th align="center">#### Gas parameters</th>
         </tr>
     </thead>
     <tbody>
