@@ -29,7 +29,7 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 
 ## Running the code
 
-In the folder, all the MATLAB files starting with "main" are different simulations of the HHG process to study the influence of various parameters such as intensity, pressure or gas velocity. However, the basic code to run the simulation is the following:
+In the source code folder, all the MATLAB files starting with "main" are different simulations of the HHG process to study the influence of various parameters such as intensity, pressure or gas velocity. However, the basic code to run the simulation is the following:
 
 
 ```matlab
@@ -88,12 +88,11 @@ Iqz = Iq(end);
 %display the result
 display(Iqz)
 ```
-Note that this program return one number, which is the harmonic amplitude output in arbitrary unit. While this number itself has no significant meaning, it is interresting to modify the input parameters to see how the output is modified.
-
-To have access to other datas like electron wavefunction, wavevector mismatch, ionization fraction... You can take a look into the function .m files. If you are interrested in negligible absorption or perfect phasematching calculations, you can call amplitude_PMfree.m, amplitude_ABSfree.m and amplitude_ABSPM_free.m instead of amplitude.m. Calculation with non zero helium fraction require the call of amplitude_He.m instead of amplitude.m
+Note that this program return one number, which is the harmonic amplitude output in arbitrary unit. While this number itself has no significant meaning, it is interresting to modify the input parameters to see how the output is modified. If you are interrested in negligible absorption or perfect phasematching calculations, you can call amplitude_PMfree.m, amplitude_ABSfree.m and amplitude_ABSPM_free.m instead of amplitude.m.
 
 
 #### Code structure
+The tree bellow summarize the role of each function and where it is called
 
 	main
 	------detectdipole					%check if dipole file already exist
@@ -124,20 +123,10 @@ To have access to other datas like electron wavefunction, wavevector mismatch, i
 	------------absorb					%absorption by the gas
 
 
-
-
-
-
-
-
-
-
-
-
-
-## Results
+## Main Results
 
 
 
 
 ## Reports
+For more details about the methods used in the simulation, are more detailed results, you can check the report or the research poster poster
