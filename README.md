@@ -25,61 +25,38 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 
 
 
-# Rule 1
-Description for rule 1.
-
-<div style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-rule: 1px dotted #e0e0e0; -moz-column-rule: 1px dotted #e0e0e0; column-rule: 1px dotted #e0e0e0;">
-    <div style="display: inline-block;">
-        <h2>Good</h2>
-        <pre><code class="language-c">int foo (void) 
-{
-    int i;
-}
-</code></pre>
-    </div>
-    <div style="display: inline-block;">
-        <h2>Bad</h2>
-        <pre><code class="language-c">int foo (void) {
-    int i;
-}
-</code></pre>
-    </div>
-</div>
-
-
-
 
 
 ## Code structure
 
 main
 
-	detectdipole
-		  dipole
-			    potde		              %potential depth
+	detectdipole					%checking if dipole file already exist
+		dipole						%calculating the dipole response
+			potde					%potential depth
 
-	phasematching
-		  detectetha  				      %check if file already exist
-			    ethap 			      %ioniation fraction after one pulse
-				      Ipot		      %ionization potentiel
-				      Nt
+	phasematching					%Calculate phasematching
+		detectetha  				%check if the ionization (single pulse) file already exist
+			ethap 					%calculate ioniation fraction after one pulse
+				Ipot				%ionization potentiel
+				Nt					%pre-exponential factor of the Yudin rate
 
-		detectethan  				      %check if file already exist
-			  etharz 			      %ioniation fraction after n pulse
-				    ethabp 		      %between 2 pulses
-					      solvepde 	      %for a fixed z
-						        Ndens
-						        mobility
-						        Press
+		detectethan  				%check if the ionization(multiple pulse) file already exist
+			etharz 					%calculate ioniation fraction after n pulse
+				ethabp 				%compute the decay between 2 pulses
+					solvepde 		%solve the pde for a fixed z
+						Ndens		%Number density at 1atm of gas
+						mobility	%mobility of ions
+						Press		%Pressure distribution
 
-		phase
-			  refractive
-			  Igauss
-			  Press
-			  ioniz
+		phase						%calculate phase matching
+			refractive				%compute refractive index
+			Igauss					%intensity gaussian distribution
+			Press					%pressure distribution
+			ioniz					%ionization fraction
 
-	  amplitude
-		    absorb
+	amplitude						%calculate final harmonic amplitude
+		absorb						%absorption by the gas
 
 
 
