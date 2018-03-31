@@ -105,9 +105,15 @@ Note that this code will return one number, which is the harmonic amplitude outp
 
 ## Main Results
 
-Since most of the parameters that are involved in the HHG process can be xhanged experementally, this is hard to
+Since there is more than 10 parameters involved in the HHG process that can be modified experimentally, and because the involved physical phenomenon are highly nonlinear, it is not possible to give an overview of all dependencies at the same time. The 2 following graphs are an example of what we can obtain by running the simulation:
 
-<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/results.png" width=600>
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/results.png" width=900>
+
+- On the left side we have the pressure dependance on the harmonic output for different harmonic order. 
+
+- On the right side the intensity dependance for different pressure is plotted
+
+With this two graphs it become clear how complex the HHG process can be. The Influence of the main parameters ar summarized in the table below.
 
 
 
