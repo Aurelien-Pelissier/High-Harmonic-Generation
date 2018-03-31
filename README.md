@@ -3,30 +3,6 @@
 High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or extreme (XUV) ultraviolet light through a nonlinear interaction of an intense laser field with a gas target. This repository contains the source code to calculate the high harmonics amplitude accounting for all involved physical phenomenons (Quantum mechanic, Supersonic flow physics, Plasma physics and Nonlinear optics). More specifically, we consider supersonic gas flow at the nozzle outlet, ions dynamic in the plasma, quantum atomic response of freed electrons, phase matching and absorption.
 
 
-
-
-## Involved parameters
-
-#### Laser parameters
-
-- Peak intensity
-- Pulse length (FWHM)
-- Wavelength
-- Beam Radius
-- Frequency
-- Harmonic order
-
-#### Gas parameters
-- Gas Velocity
-- Peak preassure
-- Nozzle diameter
-- Nozzle position
-- Gas (Krypton, Argon, Xenon)
-
-
-
-
-
 ## Running the code
 
 In the source code folder, all the MATLAB files starting with "main" are different simulations of the HHG process to study the influence of various parameters such as intensity, pressure or gas velocity. However, the basic code to run the simulation is the following:
@@ -91,8 +67,7 @@ display(Iqz)
 Note that this program return one number, which is the harmonic amplitude output in arbitrary unit. While this number itself has no significant meaning, it is interresting to modify the input parameters to see how the output is modified. If you are interrested in negligible absorption or perfect phasematching calculations, you can call amplitude_PMfree.m, amplitude_ABSfree.m and amplitude_ABSPM_free.m instead of amplitude.m.
 
 
-#### Code structure
-The tree bellow summarize the role of each function and where it is called
+#### Code tree structure
 
 	main
 	------detectdipole					%check if dipole file already exist
