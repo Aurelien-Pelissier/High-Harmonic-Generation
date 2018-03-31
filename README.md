@@ -64,7 +64,7 @@ Iqz = Iq(end);
 %display the result
 display(Iqz)
 ```
-Note that this program return one number, which is the harmonic amplitude output in arbitrary unit. While this number itself has no significant meaning, it is interresting to modify the input parameters to see how the output is modified. If you are interrested in negligible absorption or perfect phasematching calculations, you can call amplitude_PMfree.m, amplitude_ABSfree.m and amplitude_ABSPM_free.m instead of amplitude.m.
+Note that this code will return one number, which is the harmonic amplitude output in arbitrary unit. While this number itself has no significant meaning, it is interresting to modify the input parameters to see how the output is modified. If you are interrested in negligible absorption or perfect phasematching calculations, you can call amplitude_PMfree.m, amplitude_ABSfree.m and amplitude_ABSPM_free.m instead of amplitude.m.
 
 
 #### Code tree structure
