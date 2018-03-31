@@ -108,7 +108,7 @@ Since there is more than 10 parameters involved in the HHG process that can be m
 
 - On the left side we have the pressure dependance on the harmonic output for different harmonic order. 
 
-- On the right side the intensity dependance for different pressure is plotted
+- On the right side we plot the intensity dependance for different pressure
 
 With this two graphs it become clear how complex the HHG process can be. The Influence of the main parameters ar summarized in the table below.
 
