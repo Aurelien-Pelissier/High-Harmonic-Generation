@@ -5,6 +5,11 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 
 ## Running the code
 
+#### Graphical User Interface (GUI)
+
+
+
+#### The code
 In the source code folder, all the MATLAB files starting with "main" are simulations of the HHG process to study the influence of various parameters such as intensity, pressure or gas velocity. They all use the same basic code to to run the simulation, which is the following:
 
 
@@ -99,6 +104,9 @@ Note that this code will return one number, which is the harmonic amplitude outp
 
 
 ## Main Results
+
+Since most of the parameters that are involved in the HHG process can be xhanged experementally, this is hard to
+
 
 
 
