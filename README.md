@@ -88,11 +88,11 @@ Note that this code will return one number, which is the harmonic amplitude outp
 	------------------------------------mobility		%mobility of ions
 	------------------------------------Press		%Pressure distribution
 
-	------phase						%calculate phase matching
-	------------refractive					%compute refractive index
-	------------Igauss					%intensity gaussian distribution
-	------------Press					%pressure distribution
-	------------ioniz					%ionization fraction
+	------------phase					%calculate phase matching
+	------------------refractive				%compute refractive index
+	------------------Igauss				%intensity gaussian distribution
+	------------------Press					%pressure distribution
+	------------------ioniz					%ionization fraction
 
 	------amplitude						%calculate final harmonic amplitude
 	------------absorb					%absorption by the gas
@@ -104,4 +104,4 @@ Note that this code will return one number, which is the harmonic amplitude outp
 
 
 ## Reports
-For more details about the methods used in the simulation, are more detailed results, you can check the report or the research poster poster
+For more details about the methods used in the simulation, or more detailed results, you can check the report and the research poster.
