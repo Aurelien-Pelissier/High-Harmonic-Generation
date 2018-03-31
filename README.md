@@ -34,7 +34,7 @@ In the folder, all the MATLAB files starting with "main" are different simulatio
 
 ```matlab
 %General parameters:
-	q =21;                  	%Harmonic order (1:51)
+	q = 21;                  	%Harmonic order (integer between 1 and 51)
 	t = 0;                  	%Time [s] (gaussian pulse centered in t = 0)
 	alpha = 2e-14;			%Phase coefficient (taken at 2e-14 cm2/W for the whole study)
 	Te = 3;	            		%Freed electron temperature [eV] (taken as 3eV for the whole study)
@@ -55,7 +55,7 @@ In the folder, all the MATLAB files starting with "main" are different simulatio
 	profile = 'gauss'; 	  	%Density profile ('squar' or 'gauss')
 	znozzle = 0;	       		%Nozzle position [m]
 	gas = 'Kr';     		%Gas ('Ar', 'Kr', 'Xe')
-	xHe = 0;                	%Helium fraction (0:1)
+	xHe = 0;                	%Helium fraction (between 0 and 1)
 
 
 %Graph parameters:
@@ -73,20 +73,20 @@ Now that we have set all the important input parameters for the simulation, we c
 
 ```matlab
 
-	%1) Calculate the dipole response amplitude along the optical axis:
-	[dipqz,~,~,~] = detectdipole(I0,lambda1,znozzle,tp,R0,gas,q,t,zmax,nres,figure(1));close(1);
+%1) Calculate the dipole response amplitude along the optical axis:
+[dipqz,~,~,~] = detectdipole(I0,lambda1,znozzle,tp,R0,gas,q,t,zmax,nres,figure(1));close(1);
 	
-	%2) Calculate the phase matching for all z and r:
-        [~,Dp,~,~,ethaft] = phase_matching(I0,V,P,lp,profile,znozzle,gas,q,f,R0,lambda1,tp,Te,alpha,zmax,rmax,nres,t,xHe);
+%2) Calculate the phase matching for all z and r:
+[~,Dp,~,~,ethaft] = phase_matching(I0,V,P,lp,profile,znozzle,gas,q,f,R0,lambda1,tp,Te,alpha,zmax,rmax,nres,t,xHe);
 	
-	%3) Calculate the harmonic growth along the optical axis using the dipole response and the phase matching calculated before:
-        [~,Iq] = amplitude(dipqz,ethaft,Dp,P,lp,profile,q,lambda1,znozzle,zmax,nres,gas);
+%3) Calculate the harmonic growth along the optical axis using the dipole response and the phase matching calculated before:
+[~,Iq] = amplitude(dipqz,ethaft,Dp,P,lp,profile,q,lambda1,znozzle,zmax,nres,gas);
 		
-	%4) If you are interrested only in the output harmonic, just take the end of the array:
-        Iqz = Iq(end);
+%4) If you are interrested only in the output harmonic, just take the end of the array:
+Iqz = Iq(end);
 	
-	%display the result
-	display(Iqz)
+%display the result
+display(Iqz)
 ```
 Note that this program return one number, which is the harmonic amplitude output in arbitrary unit. While this number itself has no significant meaning, it is interresting to modify the input parameters to see how the output is modified.
 
