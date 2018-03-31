@@ -12,7 +12,7 @@ In the source code folder, all the MATLAB files starting with "main" are differe
 %General parameters:
 	q = 21;                  	%Harmonic order (integer between 1 and 51)
 	t = 0;                  	%Time [s] (gaussian pulse centered in t = 0)
-	alpha = 2e-14;			%Phase coefficient (taken at 2e-14 cm2/W for the whole study)
+	alpha = 2e-14;			%Phase coefficient [cm2/W] (taken at 2e-14 cm2/W for the whole study)
 	Te = 3;	            		%Freed electron temperature [eV] (taken as 3eV for the whole study)
 
 
@@ -35,8 +35,8 @@ In the source code folder, all the MATLAB files starting with "main" are differe
 
 
 %Graph parameters:
-	zmax = 1e-3; 		   	%Boundaries calculation on optical axis
-	rmax = 50e-6;		   	%Boundaries calculations on nozzle axis
+	zmax = 1e-3; 		   	%Boundaries calculation on optical axis [m]
+	rmax = 50e-6;		   	%Boundaries calculations on nozzle axis [m]
 	nres = 200; 	  	   	%Resolution
 	
 		%The calculation is made with:
