@@ -5,7 +5,7 @@ High harmonic generation (HHG) refers to the process of creating vacuum or extre
 
 ## Involved parameters
 
-![example of style transfer](https://raw.githubusercontent.com/jojo38000/KTH_DL_Proj/master/reports/style_transfer_introduction.jpg) 
+![example of style transfer](https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/HHG.png) 
 
 
  and adjusting the parameters such as driving field intensity, gas pressure or nozzle diameter to optimize the power output is not obvious. 
