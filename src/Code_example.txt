@@ -1,3 +1,6 @@
+%Basic code to run the HHG simulation:
+
+
 %General parameters:
 	q =21;				%Harmonic order (1:51)
 	t = 0;				%Time [s] (gaussian pulse centered in t = 0)
