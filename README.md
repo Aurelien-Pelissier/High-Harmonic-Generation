@@ -11,7 +11,7 @@ The GUI can be run with `src/HHG_GUI/main.m`, It is a user-friendly graphical in
 Inserti image here
 
 
-Note that, while the GUI might be slow at the beginning, all calculation are saved in txt files so the calculation will be much faster the next time you run the simulation with the same parameters.
+Note that, while the GUI might be slow at the beginning, all calculation are saved in `.txt` files so the calculation will be much faster the next time you run the simulation with the same parameters. The most commonly calculated files are already provided in the folder.
 
 
 #### The code
