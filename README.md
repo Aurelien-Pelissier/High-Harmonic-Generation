@@ -1,5 +1,5 @@
 # High-Harmonic-Generation
-<img align="left" src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/img/HHG.png" width=200>
+<img align="left" src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/img/HHG.png" width=200>
 High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or extreme (XUV) ultraviolet light through a nonlinear interaction of an intense laser field with a gas target. This repository contains the source code to calculate the high harmonics amplitude accounting for all involved physical phenomenons (Quantum mechanic, Supersonic flow physics, Plasma physics and Nonlinear optics). More specifically, we consider supersonic gas flow at the nozzle outlet, ions dynamic in the plasma, quantum atomic response of freed electrons, phase matching and absorption.
 
 
@@ -8,8 +8,7 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 #### Graphical User Interface (GUI)
 The GUI can be run with `src/HHG_GUI/main.m`, It is a user-friendly graphical interface which allow users to try different values for the input parameters and check for their impact on the HHG process. Particularily, the GUI contains information about ionization, phase matching and dipole response.
 
-Inserti image here
-
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/GUI.png" width=900>
 
 Note that, while the GUI might be slow at the beginning, all calculation are saved in `.txt` files so the computing will be much faster the next time you run the simulation with the same parameters. The most commonly calculated files are already provided in the folder.
 
@@ -109,7 +108,7 @@ Note that this code will return one number, which is the harmonic amplitude outp
 
 Since there is more than 10 experimentally adjustable parameters involved in the HHG process, and because the involved physical phenomenon are highly nonlinear, it is not possible to give an overview of all dependencies of the system at the same time. This section only showcases some of the results obtained with our simulation, for details regarding the theory and the obtained results, you can refer to the pdf report.
 
-<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/img/results.png" width=900>
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/results.png" width=900>
 
 - On the left side we have the pressure dependance on the harmonic output for different harmonic order. 
 
