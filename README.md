@@ -11,6 +11,8 @@ The GUI can be run with `src/HHG_GUI/main.m`, It is a user-friendly graphical in
 Inserti image here
 
 
+Note that, while the GUI might be slow at the beginning, all calculation are saved in txt files so the calculation will be much faster the next time you run the simulation with the same parameters.
+
 
 #### The code
 The source code for the HHG process can be found in `src/HHG_Code/`. Inside the folder, all the MATLAB files starting with `main_[..].m` are simulations of the HHG process to study the influence of various parameters such as intensity, pressure or gas velocity. They all use the same basic code to to run the simulation, which is the following:
@@ -105,7 +107,7 @@ Note that this code will return one number, which is the harmonic amplitude outp
 
 ## Main Results
 
-Since there is more than 10 parameters involved in the HHG process that can be modified experimentally, and because the involved physical phenomenon are highly nonlinear, it is not possible to give an overview of all dependencies at the same time. This section only showcases some of the results obtained with our implementation. For more details regarding the theory, implementation choices and the obtained results please refer to the pdf report. The 2 following graphs are an example of what we can obtain by running the simulation:
+Since there is more than 10 parameters involved in the HHG process that can be modified experimentally, and because the involved physical phenomenon are highly nonlinear, it is not possible to give an overview of all dependencies at the same time. This section only showcases some of the results obtained with our simulation. For details regarding the theory, implementation choices and the obtained results, you can refer to the pdf report.
 
 <img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/results.png" width=900>
 
@@ -113,7 +115,8 @@ Since there is more than 10 parameters involved in the HHG process that can be m
 
 - On the right side we plot the intensity dependance for different pressure
 
-With this two graphs it become clear how complex the HHG process can be. The Influence of the main parameters ar summarized in the table below.
+
+These two graph highlight how complex the HHG process can be. We have studied the influence of most of the input parameters, and the table below summarize how to maximize the harmonic output for each parameters.
 
 
 
@@ -122,11 +125,11 @@ With this two graphs it become clear how complex the HHG process can be. The Inf
 | Peak intensity Io | For any configuration, the optimum peak intensity is roughly 7W/cm2, which correspond to the intensity when the increasing of the dipole response does not compensate the destructive effects of the bad phasematching anymore (due to ions). Changing the gas, the beam radius or the laser frequency would modify this value. |
 | Pressure P | Increasing the pressure indefinitely does not work because it degrades the phasematching, and also increase the absorption effects. The optimum pressure varies between each configurations (500mbar−1000mbar), and it is most of the time limited by the absorption rather than phasematching. |
 | Interaction length lp | For our range of optimal pressure, the best interaction length is in the range of 50 μm - 120 μm which is smaller than what we can do experimentally.|
-| Nozzle position znoz | For low interaction length, znoz = 0mm is optimum, but as we increase lp, moving the nozzle away from the focus would improve the harmonic output.|
+| Nozzle position znoz | For low interaction length, znoz = 0mm is optimum, but as we increase lp, moving the nozzle away from the focus may actually improve the harmonic output.|
 | Time t | For high repetition rate systems, the highest harmonic power is always produced close to t = 0 fs.|
 
 
 
 
 ## Reports
-For more details about the methods used in the simulation, or more detailed results, you can check the report and the research poster.
+For more details about the methods used in the simulation, or more detailed results, you can check the report and the research poster, available in the `report/` folder.
