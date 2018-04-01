@@ -107,7 +107,7 @@ Note that this code will return one number, which is the harmonic amplitude outp
 
 ## Main Results
 
-Since there is more than 10 parameters involved in the HHG process that can be modified experimentally, and because the involved physical phenomenon are highly nonlinear, it is not possible to give an overview of all dependencies at the same time. This section only showcases some of the results obtained with our simulation. For details regarding the theory, implementation choices and the obtained results, you can refer to the pdf report.
+Since there is more than 10 parameters involved in the HHG process that can be modified experimentally, and because the involved physical phenomenon are highly nonlinear, it is not possible to give an overview of all dependencies at the same time. This section only showcases some of the results obtained with our simulation. For details regarding the theory and the obtained results, you can refer to the pdf report.
 
 <img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/results.png" width=900>
 
