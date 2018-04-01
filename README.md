@@ -117,6 +117,25 @@ With this two graphs it become clear how complex the HHG process can be. The Inf
 
 
 
+| Parameter | How to optimize |
+| --- | --- |
+| Peak intensity Io | For any configuration, the optimum peak intensity is roughly 7W/cm2, which
+correspond to the intensity when the increasing of the dipole response does not
+compensate the destructive effects of the bad phasematching anymore (due to
+ions). Changing the gas, the beam radius or the laser frequency would modify
+this value. |
+| Pressure P | Increasing the pressure indefinitely does not work because it degrades the
+phasematching, and also increase the absorption effects. The optimum pressure
+varies between each configurations (500mbar−1000mbar), and it is most
+of the time limited by the absorption rather than phasematching. |
+| Interaction length lp | For our range of optimal pressure, the best interaction length is in the range
+of 50 μm - 120 μm which is smaller than what we can do experimentally.|
+| Nozzle position znoz | For low interaction length, znoz = 0mm is optimum, but as we increase lp,
+moving the nozzle away from the focus would improve the harmonic output.|
+| Time t | For high repetition rate systems, the highest harmonic power is always produced
+close to t = 0 fs.|
+
+
 
 
 ## Reports
