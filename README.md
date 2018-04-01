@@ -125,7 +125,6 @@ These two graph highlight how complex the HHG process can be. We have studied th
 | Pressure *P* | Increasing the pressure indefinitely does not work because it degrades the phasematching, and also increase the absorption effects. The optimum pressure varies between each configurations (500mbar−1000mbar), and it is most of the time limited by the absorption rather than phasematching. |
 | Interaction length *lp* | For our range of optimal pressure, the best interaction length is in the range of 50 μm - 120 μm which is smaller than what we can do experimentally.|
 | Nozzle position *z_noz* | For low interaction length, *z_noz* = 0mm is optimum, but as we increase *lp*, moving the nozzle away from the focus may actually improve the harmonic output.|
-| Time *t* | For high repetition rate systems, the highest harmonic power is always produced close to *t* = 0 fs.|
 
 
 
