@@ -1,5 +1,5 @@
 # High-Harmonic-Generation
-<img align="left" src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/HHG.png" width=200>
+<img align="left" src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/img/HHG.png" width=200>
 High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or extreme (XUV) ultraviolet light through a nonlinear interaction of an intense laser field with a gas target. This repository contains the source code to calculate the high harmonics amplitude accounting for all involved physical phenomenons (Quantum mechanic, Supersonic flow physics, Plasma physics and Nonlinear optics). More specifically, we consider supersonic gas flow at the nozzle outlet, ions dynamic in the plasma, quantum atomic response of freed electrons, phase matching and absorption.
 
 
@@ -109,7 +109,7 @@ Note that this code will return one number, which is the harmonic amplitude outp
 
 Since there is more than 10 experimentally adjustable parameters involved in the HHG process, and because the involved physical phenomenon are highly nonlinear, it is not possible to give an overview of all dependencies of the system at the same time. This section only showcases some of the results obtained with our simulation, for details regarding the theory and the obtained results, you can refer to the pdf report.
 
-<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/results.png" width=900>
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/High-Harmonic-Generation/master/report/img/results.png" width=900>
 
 - On the left side we have the pressure dependance on the harmonic output for different harmonic order. 
 
@@ -122,11 +122,11 @@ These two graph highlight how complex the HHG process can be. We have studied th
 
 | Parameter | How to optimize |
 | --- | --- |
-| Peak intensity Io | For any configuration, the optimum peak intensity is roughly 7W/cm2, which correspond to the intensity when the increasing of the dipole response does not compensate the destructive effects of the bad phasematching anymore (due to ions). Changing the gas, the beam radius or the laser frequency would modify this value. |
-| Pressure P | Increasing the pressure indefinitely does not work because it degrades the phasematching, and also increase the absorption effects. The optimum pressure varies between each configurations (500mbar−1000mbar), and it is most of the time limited by the absorption rather than phasematching. |
-| Interaction length lp | For our range of optimal pressure, the best interaction length is in the range of 50 μm - 120 μm which is smaller than what we can do experimentally.|
-| Nozzle position znoz | For low interaction length, znoz = 0mm is optimum, but as we increase lp, moving the nozzle away from the focus may actually improve the harmonic output.|
-| Time t | For high repetition rate systems, the highest harmonic power is always produced close to t = 0 fs.|
+| Peak intensity *Io* | For any configuration, the optimum peak intensity is roughly 7W/cm2, which correspond to the intensity when the increasing of the dipole response does not compensate the destructive effects of the bad phasematching anymore (due to ions). Changing the gas, the beam radius or the laser frequency would modify this value. |
+| Pressure *P* | Increasing the pressure indefinitely does not work because it degrades the phasematching, and also increase the absorption effects. The optimum pressure varies between each configurations (500mbar−1000mbar), and it is most of the time limited by the absorption rather than phasematching. |
+| Interaction length *lp* | For our range of optimal pressure, the best interaction length is in the range of 50 μm - 120 μm which is smaller than what we can do experimentally.|
+| Nozzle position *z_noz* | For low interaction length, *z_noz* = 0mm is optimum, but as we increase *lp*, moving the nozzle away from the focus may actually improve the harmonic output.|
+| Time *t* | For high repetition rate systems, the highest harmonic power is always produced close to *t* = 0 fs.|
 
 
 
