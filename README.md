@@ -13,7 +13,7 @@ Inserti image here
 
 
 #### The code
-In the source code folder, all the MATLAB files starting with `main_[..].m` are simulations of the HHG process to study the influence of various parameters such as intensity, pressure or gas velocity. They all use the same basic code to to run the simulation, which is the following:
+The source code for the HHG process can be found in `src/HHG_Code/`. Inside the folder, all the MATLAB files starting with `main_[..].m` are simulations of the HHG process to study the influence of various parameters such as intensity, pressure or gas velocity. They all use the same basic code to to run the simulation, which is the following:
 
 
 ```matlab
