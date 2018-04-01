@@ -4,32 +4,32 @@
 %General parameters:
 	q =21;                  %Harmonic order (1:51)
 	t = 0;                  %Time [s] (gaussian pulse centered in t = 0)
-	alpha = 2e-14;			%Phase coefficient (taken at 2e-14 cm2/W for the whole study)
+	alpha = 2e-14;		%Phase coefficient (taken at 2e-14 cm2/W for the whole study)
 	Te = 3;	            	%Freed electron temperature [eV] (taken as 3eV for the whole study)
 
 
 %Laser parameters:
 	I0 = 6e13;              %Peak intensity [W/cm2]
-	tp = 130e-15;			%Pulse length (FWHM)
-	lambda1 = 1050e-9;		%Fundamental wavelength [m]
-	R0 = 19.6e-6;			%Beam radius [m]
-	f = 60e6; 	           	%Laser frequency [Hz]
+	tp = 130e-15;		%Pulse length (FWHM)
+	lambda1 = 1050e-9;	%Fundamental wavelength [m]
+	R0 = 19.6e-6;		%Beam radius [m]
+	f = 60e6; 	        %Laser frequency [Hz]
 
 
 %Gas parameters:
-	V = 250;          		%Gas velocity [m/s]
+	V = 250;          	%Gas velocity [m/s]
 	P = 500;                %Peak pressure [mbar]
-	lp = 150e-6; 			%Interaction length (FWHM if gaussian)/ nozzle diameter [m]
-	profile = 'gauss'; 	  	%Density profile ('squar' or 'gauss')
+	lp = 150e-6; 		%Interaction length (FWHM if gaussian)/ nozzle diameter [m]
+	profile = 'gauss'; 	%Density profile ('squar' or 'gauss')
 	znozzle = 0;	       	%Nozzle position [m]
-	gas = 'Kr';     		%Gas ('Ar', 'Kr', 'Xe')
+	gas = 'Kr';     	%Gas ('Ar', 'Kr', 'Xe')
 	xHe = 0;                %Helium fraction (0:1)
 
 
 %Graph parameters:
-	zmax = 1e-3; 		   	%Boundaries calculation on optical axis
-	rmax = 50e-6;		   	%Boundaries calculations on nozzle axis
-	nres = 50; 	  	   	%Resolution (50,100 or 200) [50 is a good approximation if ionization not to high, but 200 is needed for accurate calculation, do not go higher than 200 - or MATLAB will go out of memory]
+	zmax = 1e-3; 		%Boundaries calculation on optical axis
+	rmax = 50e-6;		%Boundaries calculations on nozzle axis
+	nres = 50; 	  	%Resolution (50,100 or 200) [50 is a good approximation if ionization not to high, but 200 is needed for accurate calculation, do not go higher than 200 - or MATLAB will go out of memory]
 
 		%The calculations are made with:
 		%z	= [-zmax : (2*zmax)/nres : zmax];
