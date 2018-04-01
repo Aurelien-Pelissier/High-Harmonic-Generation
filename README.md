@@ -6,6 +6,9 @@ High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or
 ## Running the code
 
 #### Graphical User Interface (GUI)
+The GUI can be run with `src/HHG_GUI/main.m`, It is a user-friendly graphical interface and allow users to try different values for the input parameters and check for their impact on the HHG process. Particularily, the GUI contains information about ionization, phase matching and dipole response.
+
+Inserti image here
 
 
 
