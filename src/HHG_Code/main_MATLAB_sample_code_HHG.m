@@ -29,7 +29,7 @@
 %Graph parameters:
 	zmax = 1e-3; 		   	%Boundaries calculation on optical axis
 	rmax = 50e-6;		   	%Boundaries calculations on nozzle axis
-	nres = 200; 	  	   	%Resolution (50,100 or 200) [50 is a good approximation if ionization not to high, but 200 is needed for accurate calculation, do not go higher than 200 - or MATLAB will go out of memory]
+	nres = 50; 	  	   	%Resolution (50,100 or 200) [50 is a good approximation if ionization not to high, but 200 is needed for accurate calculation, do not go higher than 200 - or MATLAB will go out of memory]
 
 		%The calculations are made with:
 		%z	= [-zmax : (2*zmax)/nres : zmax];
