@@ -43,7 +43,7 @@ The source code for the HHG process can be found in `src/HHG_Code/`. Inside the 
 %Graph parameters:
 	zmax = 1e-3; 		   	%Boundaries calculation on optical axis [m]
 	rmax = 50e-6;		   	%Boundaries calculations on nozzle axis [m]
-	nres = 200; 	  	   	%Resolution
+	nres = 50; 	  	   	%Resolution
 	
 		%The calculation is made with:
 		%z	= [-zmax : (2*zmax)/nres : zmax];
