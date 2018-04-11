@@ -3,6 +3,9 @@
 High harmonic generation (HHG) refers to the process of creating vacuum (VUV) or extreme (XUV) ultraviolet light through a nonlinear interaction of an intense laser field with a gas target. This repository contains the source code to calculate the high harmonics amplitude accounting for all involved physical phenomenons (Quantum mechanic, Supersonic flow physics, Plasma physics and Nonlinear optics). More specifically, we consider supersonic gas flow at the nozzle outlet, ions dynamic in the plasma, quantum atomic response of freed electrons, phase matching and absorption.
 
 
+
+&nbsp;
+
 ## Running the code
 
 #### Graphical User Interface (GUI)
@@ -135,6 +138,8 @@ These two graph highlight how complex the HHG process can be. We have studied th
 
 
 
+
+&nbsp;
 
 ## Reports
 For more details about the methods used in the simulation, or more detailed results, you can check the report and the research poster, available in the `report/` folder.
