@@ -13,6 +13,8 @@ The GUI can be run with `src/HHG_GUI/main.m`, It is a user-friendly graphical in
 Note that, while the GUI might be slow at the beginning, all calculation are saved in `.txt` files so the computing will be much faster the next time you run the simulation with the same parameters. The most commonly calculated files are already provided in the project folder.
 
 
+&nbsp;
+
 #### The code
 The source code for the HHG process can be found in `src/HHG_Code/`. Inside the folder, all the MATLAB files starting with `main_[..].m` are simulations of the HHG process to study the influence of various parameters such as intensity, pressure or gas velocity. They all use the same basic code to to run the simulation, which is the following:
 
@@ -73,6 +75,8 @@ display(Iqz)
 Note that this code will return one number, which is the harmonic amplitude output in arbitrary unit. While this number itself has no significant meaning, it is interresting to modify the input parameters to see how the output is modified. If you are interrested in negligible absorption or perfect phasematching calculations, you can call amplitude_PMfree.m, amplitude_ABSfree.m and amplitude_ABSPM_free.m instead of amplitude.m.
 
 
+&nbsp;
+
 #### Code tree structure
 
 	main
@@ -103,6 +107,8 @@ Note that this code will return one number, which is the harmonic amplitude outp
 	------amplitude						%calculate final harmonic amplitude
 	------------absorb					%absorption by the gas
 
+
+&nbsp;
 
 ## Main Results
 
