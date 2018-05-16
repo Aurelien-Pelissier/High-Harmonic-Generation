@@ -147,4 +147,4 @@ These two graph highlight how complex the HHG process can be. We have studied th
 &nbsp;
 
 ## Reports
-For more details about the methods used in the simulation, or more detailed results, you can check the report and the research poster, available in the `report/` folder.
+For more details about the methods used in the simulation, references, or more detailed results, you can check the report and the research poster, available in the `report/` folder.
